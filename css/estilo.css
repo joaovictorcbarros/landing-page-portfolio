@@ -1,0 +1,542 @@
+/* importando a font "REM" */
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetando os estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gerais */
+body {
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#cabecalho div {
+    background-color: #000000;
+    background-image: url(../img/design_code.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 400px;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Estilo da Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #323232;
+}
+
+.nav-links a {
+    color: #FFF;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+}
+
+#degrade {
+    background-image: linear-gradient(to top, #ed7520, #5f336c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Menu Navbar  */
+.menu {
+    display: flex;
+    gap: 0.5em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 10px;
+    background-color: #ed7520;
+    border-radius: .1rem;
+}
+
+.menu li:hover {
+    background-color: #5f336c;
+    border-radius: .2rem;
+    transition: 0.3s ease;
+}
+
+/* Navbar Responsiva */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Hambuger do Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* Estilo gerais */
+section {
+    background-color: #e3e2e2;
+    font-family: "REM", sans-serif;
+}
+
+.titulo {
+    font-family: 'Trebuchet MS';
+    font-size: 2.67vw;
+    font-weight: bold;
+    color: #764b83;
+    margin-bottom: 1rem;
+}
+
+.paragrafo {
+    color: #464646;
+    text-align: justify;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+/* Seção - sobre */
+#sobre {
+    padding: 5rem;
+    margin: 5rem;
+}
+
+#sobre figure {
+    width: 100%; 
+    max-width: 200px;
+    margin-top: 1.5%;
+    margin-right: 40px;
+    float: left;
+}
+
+#img-sobre figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-sobre figure img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+#img-sobre figure figcaption {
+    margin-top: 10px;
+    font-size: 1.3vw;
+    color: #323232;
+    margin-bottom: 5px;
+}
+
+#sobre hr {
+    width: 50%;
+    height: 2px;
+    margin: 15px auto;
+    background-color: transparent;
+    border: none;
+    box-shadow: 10px 0 10px rgba(148, 0, 211, 0.8);
+}
+
+#sobre p em {
+    color: #3f90d3;
+}
+
+blockquote {
+    display: block;
+    margin-left: 250px;
+    line-height: 2vw;
+}
+
+/* Seção - formação */
+#formacao {
+    padding: 5rem;
+    margin: 5rem;
+    overflow: hidden; 
+}
+
+#formacao ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto 0;
+}
+
+#lista-escada {
+    list-style-type: none;
+}
+
+#lista-escada li { 
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#lista-escada li::before {
+    content: "\25B6";
+    margin-right: 3px;
+    position: static;
+    color: #d67835;
+}
+
+/* Posicionamento em escada */
+#lista-escada li:nth-child(4) {
+    margin-left: 0%; /* Quarto item */
+    padding-bottom: 20px;
+}
+
+#lista-escada li:nth-child(3) {
+    margin-left: 10%; /* Terceiro item */
+    padding-bottom: 20px;
+}
+
+#lista-escada li:nth-child(2) {
+    margin-left: 20%; /* Segundo item */
+    padding-bottom: 20px;
+}
+
+#lista-escada li:nth-child(1) {
+    margin-left: 30%; /* Primeiro item */
+    padding-bottom: 20px;
+}
+
+#formacao sub {
+    margin-left: .1%;
+    font-size: .8vw;
+    font-weight: 700;
+}
+
+#formacao hr {
+    width: 50%;
+    height: 2px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 10px 0 10px rgba(148, 0, 211, 0.8);
+    margin: 30px auto;
+}
+
+#formacao h3 {
+    font-family: 'Trebuchet MS';
+    font-size: 2vw;
+    font-weight: bold;
+    color: #725e78;
+    margin-bottom: 1rem;
+}
+
+/* Skills/Habilidades */
+.container-skills {
+    width: 100%;
+    background-color: #e3e2e2;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.design {
+    background-color: #04AA6D;
+    width: 90%; 
+}
+.devweb {
+    background-color: #2196F3;
+    width: 70%; 
+}
+.programacao {
+    background-color: #f44336;
+    width: 45%;
+}
+.interpessoais {
+    background-color: #868786;
+    width: 65%; 
+}
+.linguas {
+    background-color: #ed7520;
+    width: 25%; 
+}
+
+/* Seção - portfólio */
+#portfolio {
+    padding: 5rem;
+    margin: 5rem;
+}
+
+.responsivo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#portfolio hr {
+    width: 50%;
+    height: 2px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 10px 0 10px rgba(148, 0, 211, 0.8);
+    margin: 30px auto;
+}
+
+#portfolio .container figure {
+    margin: 5px;
+    text-align: center;
+    width: auto;
+}
+
+#portfolio .descricao {
+    background-color: #f0a36d;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px 0;
+    padding: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Seção - Contato */
+#contato {
+    padding: 5rem;
+    margin: 5rem;
+}
+
+/* Estilizando os elementos dentro da tag form */
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 5px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #512a5c;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=submit] {
+    background-color: #444;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: .1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    display: block;
+}
+
+input[type=submit]:hover {
+    background-color: #552e60cf;
+    border-radius: .2rem;
+}
+
+.container-form {
+    border-radius: .2rem;
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.row {
+    margin: 10px 0; 
+}
+
+/* Rodapé */
+footer {
+    background-color: #323232;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-degrade {
+    background-image: linear-gradient(to right, #5f336c, #ed7520);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer p {
+    margin-top: .5rem;
+}
+
+#texto-footer {
+    font-family: "REM";
+    background-image: linear-gradient(to left, #5f336c, #ed7520);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Estilos geral para conteúdos Sobre e Contatos em telas menores */
+@media (max-width: 768px) {
+    #sobre, #contato {
+        padding: 3rem; /* Reduzir o padding para telas menores */
+        margin: 3rem; /* Reduzir a margem para telas menores */
+    }
+}
+
+/* Estilos específico para o conteúdo Formacao em telas menores */
+@media (max-width: 768px) {
+    #formacao {
+        padding: 3rem; 
+        margin: 3rem;
+    }
+
+    #lista-escada li {
+        margin-left: 0; 
+        padding-left: 0; 
+    }
+
+    #formacao h3 {
+        font-size: 1.5rem; 
+    }
+
+    #formacao sub {
+        font-size: .9vw; 
+    }
+}
+
+/* Estilo específico do conteúdo portfólio em telas menores */
+@media (max-width: 768px) {
+    #portfolio {
+        padding: 3rem; /* Ajusta o padding para telas menores */
+        margin: 3rem; /* Ajusta a margem para telas menores */
+    }
+
+    #portfolio .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #portfolio .responsivo {
+        max-width: 100%; 
+    }
+
+    #portfolio hr {
+        width: 80%; 
+    }
+}
+
+/* Estilo do Menu para se adapatar a telas menores */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #323232;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #5f336c;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 10px;
+    }
+
+    input[type="checkbox"]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        color: #FFF;
+    }
+}
+
+/* Estido do conteúdo do Sobre para se adaptar a telas menores */
+@media (max-width: 768px) {
+    blockquote {
+        margin-left: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
+/* Estilo do conteúdo do Contato(form) para se adaptar a telas menores */
+@media (max-width: 768px) {
+    input[type=text],
+    input[type=email],
+    textarea {
+        padding: 10px; 
+    }
+
+    input[type=submit] {
+        padding: 10px; 
+        font-size: 1rem; 
+    }
+}
