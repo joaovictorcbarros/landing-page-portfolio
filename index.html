@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Landing Page - Portifólio</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+</head>
+
+<body>
+    <!-- Imagem antes do conteúdo -->
+    <header id="cabecalho">
+        <div></div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <!-- Logo - volta pro Início ao clicada -->
+        <div class="logo" id="degrade">
+            <a href="#">João Victor</a>
+        </div>
+        <!-- Navlinks -->
+        <ul class="nav-links">
+            <!-- Crie o menu hamburger com input checkbox -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- Menu -->
+            <div class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Section - Sobre mim -->
+    <main>
+        <section id="sobre">
+            <h2 class="titulo">Sobre Mim</h2>
+            <div id="img-sobre">
+                <figure>
+                    <img src="img/minha-imagem-transparente.png" alt="Minha Imagem">
+                    <figcaption>João Victor</figcaption>
+                    <hr>
+                </figure>
+            </div>
+            <blockquote>
+                <p class="paragrafo" style="margin-top: 1rem;">
+                    Olá, seja bem-vindo ao meu portfólio! Me chamo João Victor, sou de Brasília/DF e moro com meus pais. Há
+                    dois anos, descobri que tenho <em>diabetes tipo LADA</em>, o que me fez repensar a vida. Nas horas vagas,
+                    gosto de jogar, assistir filmes e séries, e tocar violino.
+                </p>
+                <p class="paragrafo" style="margin-top: 1rem;">
+                    Meu interesse por Tecnologia da Informação começou após terminar o ensino médio, quando comecei a
+                    estudar para concursos, fiz alguns cursos técnicos, mas nunca atuei na área. Meu primo, que sempre
+                    me incentivou a seguir esse caminho, infelizmente foi morar com Deus.
+                </p>
+                <p class="paragrafo" style="margin-top: 1rem;">
+                    Atualmente, estou cursando Análise e Desenvolvimento na UNINTER, sou entusiasta de Cibersegurança e
+                    Hacking. Embora ainda tenha muito a aprender sobre desenvolvimento web e programação, estou sempre
+                    estudando por conta própria. Acredito que a jornada do aprendizado nunca termina e estou animado
+                    para ver até onde essa paixão pela tecnologia me levará. <em style="color: #464646; font-weight: 500;">Obrigado pela visita!</em>
+                </p>
+            </blockquote>
+        </section>
+
+        <!-- Section - Formação -->
+        <section id="formacao">
+            <h2 class="titulo">Formação</h2>
+            <ul id="lista-escada" class="paragrafo">
+                <li>Análise e Desvolvimento de Sistemas (Início 2024 - Fim 2026)
+                    <sub style="color: #f4b010;">UNINTER</sub>
+                </li>
+                <li>Técnico em Informática - (Início 2017 - Fim 2021)
+                    <sub style="color: #103784;">ETB</sub>
+                </li>
+                <li>Técnico em Informática para Internet - (Início 2014 - Fim 2015)
+                    <sub style="color: #ca0909;">IESB</sub>
+                </li>
+                <li>Ensino Médio Completo (Início 2011 - Fim 2013)
+                    <sub style="color: #373a37;">Colégio Público</sub>
+                </li>
+            </ul>
+        
+            <hr>
+
+            <!-- Section Formação(Skills - Habilidades) -->
+            <h3>Skills</h3>
+
+            <p class="paragrafo">Design</p>
+            <div class="container-skills">
+                <div class="skills design">95%</div>
+            </div>
+            <p class="paragrafo">Desenvolvimento Web</p>
+            <div class="container-skills">
+                <div class="skills devweb">70%</div>
+            </div>
+            <p class="paragrafo">Programação</p>
+            <div class="container-skills">
+                <div class="skills programacao">45%</div>
+            </div>
+            <p class="paragrafo">Habilidades Interpessaois</p>
+            <div class="container-skills">
+                <div class="skills interpessoais">65%</div>
+            </div>
+            <p class="paragrafo">Habilidades Linguísticas</p>
+            <div class="container-skills">
+                <div class="skills linguas">25%</div>
+            </div>
+        </section>
+            
+        <!-- Section - Portfólio -->
+        <section id="portfolio">
+            <h2 class="titulo">Portfólio</h2>
+            <p class="paragrafo" style="line-height: 2vw;">
+                <strong style="color: #464646">
+                    Olá Sejam todos bem-vindos ao meu humilde portifólio!
+                </strong>
+                Sempre prezo pelo bom design, buscando criar experiências digitais que sejam funcionais e visualmente
+                atraentes.
+                Tenho habilidade para criar designs de forma prática, como demonstrado em alguns projetos que realizei
+                no Canva.
+                Além disso, possuo uma boa compreensão de HTML e CSS, e estou aprendendo JavaScript para transformar
+                ideias em
+                sites responsivos e designs criativos. Abaixo, selecionei alguns projetos que desenvolvi no Canva, além
+                de
+                outros trabalhos. Você pode acessá-los no meu repositório do GitHub através do link abaixo.
+            </p>
+
+            <hr>
+
+            <!-- Container com imagens e link para repositório -->
+            <div class="container">
+                <figure>
+                    <img src="imagens/imagem1.png" alt="Campanha do Burger King - brinde" class="responsivo"
+                        title="Projeto de design - Campanha de Sofisticação BK"
+                        onclick="openModal('imagens/imagem1-grande.png')">
+                    <figcaption class="descricao">Campanha - BK</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/imagem2.png" alt="Rebrand logo da Lay's" class="responsivo"
+                        title="Projeto de design - Rebrand Logo da Lay's"
+                        onclick="openModal('imagens/imagem2-grande.png')">
+                    <figcaption class="descricao">Email Marketing</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/imagem3.png" alt="Email marketing curso programação" class="responsivo"
+                        title="Projeto de design - Email marketing" 
+                        onclick="openModal('imagens/imagem3-grande.png')">
+                    <figcaption class="descricao">Rebrand - Lay's</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://github.com/joaovictorcbarros" target="_blank">
+                        <img src="imagens/logo-github.png" alt="logo-github" title="Acesse meus repositórios"
+                            class="responsivo">
+                    </a>
+                    <figcaption class="descricao">Repositórios</figcaption>
+                </figure>
+            </div>
+
+            <!-- Modal(script para abrir as imagens ao clicar) -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="img01">
+            </div>
+        </section>
+
+        <!-- Section - Contato -->
+        <section id="contato">
+            <h2 class="titulo">Contato</h2>
+
+            <!-- Formulário para contato -->
+            <div class="container-form">
+                <form>
+                    <div class="row">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="John Doe">
+                    </div>
+
+                    <div class="row">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@mail.com">
+                    </div>
+
+                    <div class="row">
+                        <label for="msg">Menssagem: </label>
+                        <textarea id="msg" name="msg" placeholder="Deixe sua mensagem..." rows="5" cols="40"></textarea>
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p class="footer-degrade">Copyright &copy; 2024 - Meu Portfólio</p> 
+        <p class="footer-degrade">
+            <strong id="texto-footer">Criado por João Victor Costa Barros</strong>
+        </p> 
+    </footer>
+    <script src="js/scripts-galeria.js"></script>
+</body>
+</html>
